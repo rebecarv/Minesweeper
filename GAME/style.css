@@ -63,7 +63,7 @@
   }
 
   .cell-bomb {
-    background-image: url('./IMAGES/bomb.png');
+    background-image: url('./bomb.png');
     background-size: contain;
     background-position: center;
 
