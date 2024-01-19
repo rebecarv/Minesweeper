@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 70px;
+    font-family: 'Darker Grotesque', 'Times New Roman';
+    line-height: 1;
+    color: rgb(22, 0, 12);
+    background-color: rgb(135, 114, 171);
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .btn {
+    font-size: 24px;
+    font-family: 'Darker Grotesque', 'Times New Roman';
+    padding: 4px 20px 8px 20px;
+    /* width: 50%; */
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .btn:hover {
+    background-color: rgb(203, 224, 221);
+  }
+  
+  /* # Game Grid */
+  .score {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    /* font-weight: 700; */
+  }
+  
+  .game-board {
+    border: 2px solid rgb(0, 23, 50);
+    position: relative;
+  }
+  
+  .game-container {
+    width: calc((48px * 10) + 4px);
+  }
+  
+  .grid {
+    width: calc((48px * 10) + 4px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cell {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    outline: 1px solid rgb(0, 0, 0);
+  }
+
+  .cell-bomb {
+    background-image: url('./IMAGES/bomb.png');
+    background-size: contain;
+    background-position: center;
+
+  }
+  
+  /* # Game over */
+  .end-game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 7, 220, 0.7);
+  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .win {
+    background-color: rgba(78, 241, 187, 0.7);
+  }
+  
+  .end-game-text {
+    font-size: 48px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+  }
+  
+  /* # Utilities */
+  
+  .hidden {
+    display: none;
+  }
+
+  .cell-clicked {
+    background-color: rgb(71, 62, 99);
+    cursor: not-allowed;
+  }
