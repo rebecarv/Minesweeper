@@ -11,6 +11,11 @@
     line-height: 1;
     color: rgb(22, 0, 12);
     background-color: rgb(135, 114, 171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
   }
   
   h1 {
